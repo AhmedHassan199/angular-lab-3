@@ -1,0 +1,20 @@
+<h1>Regesteration</h1>
+<div class="form">
+  <input type="text" placeholder="Name"[(ngModel)]="name"  />
+  <input type="text" placeholder="Age" [(ngModel)]="age" />
+
+  <div style="text-align: center; color: red;" *ngIf="+age < 15 && age; else trueBlock">
+    Age > 15
+  </div>
+  <ng-template #trueBlock>
+    <div style="color: aqua; text-align: center;" *ngIf="age && +age==20 ; else true2Block">
+      -------Welcome 20--------
+    </div>
+  </ng-template>
+  <ng-template #true2Block>
+    <div *ngIf="age" style="color: greenyellow; text-align: center;">
+      Valid
+    </div>
+  </ng-template>
+  <input type="button" value="ADD" (click)="Add()" />
+</div>

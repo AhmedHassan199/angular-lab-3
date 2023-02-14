@@ -1,0 +1,19 @@
+<h1>Students</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--Directive-->
+     <tr>
+    <tr *ngFor="let Student of DataFromParent">
+      <td>{{Student}}</td>
+      <td>{{Student}}</td>
+      <!--Directive-->
+     <!-- <td *ngIf="+s>15">{{s}}</td> -->
+    </tr>
+  </tbody>
+</table>

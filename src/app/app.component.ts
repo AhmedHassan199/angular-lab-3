@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day3';
+  DataFromLogin= "";
+  GetData(data:any){
+    // console.log(data);
+    this.DataFromLogin = data;
+  
+  }
 }
